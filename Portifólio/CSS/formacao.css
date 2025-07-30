@@ -1,0 +1,121 @@
+.formacao{
+    background: rgb(56, 56, 56);
+    color: #ffffff;
+}
+
+.formacao-container{
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin : 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    position: relative;
+    top: 40px;
+}
+
+/*.formacao-container::after{ 
+    content: "";
+    display: block;
+    width: 130px;
+    height: 150px;
+    background url(imagem);
+    position: absolute;
+    bottom: -85px;
+    left: 20px;
+}
+*/
+
+.formacao .subtitulo{
+    color: #000000;
+    max-width: 5ch;
+}
+
+.formacao-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 47ch;
+    margin-bottom: 60px;
+    color: rgb(24, 24, 24);
+}
+
+.formacao-texto strong{
+    color: #000000;
+}
+
+.estudo-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.estudo{
+    flex: 1;
+    background: #7550a5;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.estudo-tipo{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.curso{
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 3ch;
+}
+
+.curso::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: #fbff00;
+    position: absolute;
+    top: 5px;
+    left: -24px;
+}
+
+.instituicao{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.estudo-tipo{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.curso li{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:800px){
+    .formacao-container{
+        grid-template-columns: 1fr;
+        padding: 60px 40px;
+        gap: 40px;
+    }
+    .formacao .subtitulo{
+        color: #ffffff;
+    }
+    .formacao-texto{
+        font-size: 1rem;
+    }
+}
